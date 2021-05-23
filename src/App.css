@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100&display=swap');
+*{
+  box-sizing: border-box; 
+  padding:0;
+  margin: 0;
+  font-family: 'Josefin Sans', sans-serif;
+}
+.mainDiv{
+width:100%;
+height:100vh;
+background: #6983aa;
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+text-align:center;
+}
+.centerDiv{
+  width: 25%;
+  height:80vh;
+  background-color: white;
+  box-shadow: 5px 25px 25px -5px rgba(0,0.0,0.5);
+  /*border: 2px solid brown;*/
+  border-radius: 10px;
+}
+h1{
+  color: white;
+  background: transparent;
+  background-color: teal;
+  padding: 6px 0 2px 0;
+  margin-bottom: 30px;
+  box-shadow: 5px 5px 15px -5px rgba(0,0.0,0.3);
+}
+input{
+  text-align: center;
+  height: 30px;
+  top:10px;
+  border:none;
+  background:transparent;
+  font-size: 20px;
+  font-weight: 500;
+  width:60%;
+  border-bottom: 2px solid teal;
+  outline: none;
+}
+button{
+  color:white;
+  min-height:40px;
+  width: 40px;
+  border:none;
+  font-size: 40px;
+  border-radius: 50%; 
+  background-color: teal;
+  outline:none;
+  box-shadow: 5px 5px 15px -5px rgba(0,0.0,0.3);
+  margin-left:10px;
+}
+
+button:hover{
+  background-color: rgb(58, 223, 58);
+}
+ol{
+  margin-top: 50px;
+}
+ol li{
+  padding-left: 0px;
+  text-align: left;
+  font-size: 20px;
+  font-weight: 900;
+  min-height: 40px;
+  display: flex;
+  align-items: center;
+  text-transform: capitalize;
+  color:teal;
+}
+.todoStyle{
+display: flex;
+flex-direction: row;
+justify-content: left;
+align-items: center;
+}
+.todoStyle .crossIcon{
+  width: 20px;
+  height: 20px;
+  display: flex;
+  justify-content: center;
+  background-color: teal;
+  border-radius:50%;
+  margin: 0 15px 0 35px;
+  color:aliceblue;
+  box-shadow: 5px 5px 15px -5px rgba(0,0.0,0.3);
+}
+.todoStyle .crossIcon:hover{
+color: crimson;
+}
+
+@media (max-width: 768px) {
+  .centerDiv{
+    width: 55%;
+  }
+}
